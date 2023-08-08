@@ -19,15 +19,14 @@ public class App
     }
 
     static int calculatorApp(int mode, int a, int b) {
-        switch(mode) {
-            case 1:
-                return add(a, b);
-            case 2:
-                return multiply(a, b);
-            case 3:
-                return divide(a, b);
-            default:
-                return 0;
+        if (mode == 1) {
+            return add(a, b);
+        } else if (mode == 2) {
+            return multiply(a, b);
+        } else if (mode == 3) {
+            return divide(a, b);
+        } else {
+            return 0;
         }
     }
     static int add(int a, int b) {
@@ -35,7 +34,8 @@ public class App
     }
 
     static int multiply(int a, int b) {
-        return a * b;
+        int result = a * b;
+        return result;
     }
 
     static int divide(int a, int b) {

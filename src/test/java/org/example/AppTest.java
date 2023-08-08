@@ -34,5 +34,9 @@ public class AppTest
         int result = App.calculatorApp(1, a, b);
 
         assertEquals(result, 10);
+
+        int multiplyResult = App.calculatorApp(2, a, b);
+
+        assertEquals(multiplyResult, 25);
     }
 }
